@@ -1,0 +1,72 @@
+body {padding: 0;margin: 0;font-family: sans-serif;}
+* {box-sizing: border-box;}
+a {color: #000}
+.clr {clear: both;}
+.algn-cntr {position: relative !important;}
+.cntr {position: absolute;left: 50%;transform: translateX(-50%);}
+.mdle {position: absolute;top: 50%;transform: translateY(-50%);}
+.cnmd {position: absolute;top: 50%;left: 50%;transform: translateY(-50%) translateX(-50%);}
+.fkiri {float: left;}
+.fkanan {float: right;}
+.space {height: 200px}
+.spaceDelete {padding: 25px;border-bottom: 1px solid #ccc;font-size: 20px; color: #bbb}
+  .spaceDelete p {padding: 0;margin: 10px 0 0;font-size: 14px}
+  .rekomendAct {background: linear-gradient(#D5A253, #b38032);color: #fff !important}
+    .rekomendAct:hover {    background: linear-gradient(#c39247, #9f7129) !important;}
+/* .spacer-button {height: 97px} */
+
+.navbar-container {background-color: #fff;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44);position: fixed;top: 0;width: 100%;z-index: 99;}
+  .navbar-container ul {list-style-type: none;padding: 0;margin: 0}
+  .navbar-container ul li {float: left;padding: 10px;font-size: 13px;}
+  .boxData {background-color: #f2f2f2;color: #888;padding: 8.5px 15px !important;font-size: 16px !important}
+  .copyData {background: linear-gradient(#D5A253, #b38032);color: #fff;padding: 10px 30px !important}
+  .link-home {background: linear-gradient(#D5A253, #b38032);color: #fff;}
+
+
+
+.editor-container {height: calc(100% - 35px);margin-top: 35px;position: absolute;width: 70%;overflow: auto;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44)}
+.addButton {}
+  .addButtonLink {padding: 30px;width: 100%;font-size: 25px;background-color: #fff;box-shadow: 0 2px 5px #ddd}
+  .buttonActMaster {background-color: #fff;padding: 10px 25px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 20px}
+
+  .listData {padding: 30px;}
+    .buttonData {width: 100%;margin-bottom: 2px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
+    .buttonDataContainer {position: relative;}
+    .buttonList {padding: 5px 0 5px 10px;width: calc(100% - 28px);left: 30px}
+    .dragMe {padding: 0px 10px;height: 68px;background: linear-gradient(#D5A253, #b38032);color: #fff;display: table;cursor: move;}
+      .dragMe i {display: table-cell;vertical-align: middle;font-size: 14px}
+    .judulButton {font-size: 20px;line-height: 15px;padding: 2.5px}
+    .linkButton, .linkTool {font-size: 15px;line-height: 20px;padding: 2.5px}
+    .linkButton {color: #3a4345}
+    .linkTool {position: absolute;right: 15px;top: 50%;transform: translateY(-50%);font-size: 20px;color: #ccc}
+      .linkTool i:hover {color: #888}
+    .linkTool i {cursor: pointer;padding: 0 5px}
+
+.view {width: 30%;height: calc(100% - 35px);position: absolute;right: 0;top: 35px;overflow: auto;}
+
+.shadow-popup {width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.50);position: fixed;z-index: 9999;display: none;top: 0;left: 0}
+  .content-popup {min-width: 500px;max-width: 700px;background-color: #fff;box-shadow: 0 0 60px rgba(0, 0, 0, 0.50);border-radius: 5px}
+  .judulButtonPopUp {width: 100%;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);padding: 20px;z-index: 99}
+    .judulButtonPopUp h1 {margin: 0}
+  .popUpContentContainer {padding: 20px}
+  .urlCustom {width: 100%;border: 0;background-color: #eee;font-size: 16px;padding: 10px;margin-bottom: 10px}
+  .submitURL {width: 100%;padding: 10px}
+  .closePopUp {color: #D5A253;cursor: pointer;}
+
+.shadow-stats {width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.50);position: fixed;z-index: 9999;display: none;top: 0;left: 0}
+.contentStatsContainer {min-width: 300px;max-width: 700px;background-color: #fff;box-shadow: 0 0 60px rgba(0, 0, 0, 0.50);border-radius: 5px;position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);}
+.contentStats {font-size: 100px;text-align: center;line-height: 100px;padding: 20px 20px 0 20px;overflow: hidden;}
+.keterangan {text-align: center;padding: 20px}
+
+.shadowContainerAddButton {position: fixed;width: 100%;height: 100vh;top: 0;left: 0;z-index: 99;display: none}
+.shadownAddButton, .shadownDeleteButton {position: relative;width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.50)}
+.addDataContainer {min-width: 500px;max-width: 700px;background-color: #fff;box-shadow: 0 0 60px rgba(0, 0, 0, 0.50);border-radius: 5px;}
+  .addDataFormContainer {padding: 20px}
+
+.deleteShadowContainer {position: fixed;width: 100%;height: 100vh;top: 0;left: 0;z-index: 99;display: none;}
+  .deleteDataContainer {min-width: 500px;max-width: 700px;background-color: #fff;box-shadow: 0 0 60px rgba(0, 0, 0, 0.50);border-radius: 5px;overflow: hidden;}
+
+.deleteOptionContainer {position: relative;}
+  .deleteOption {width: 50%;padding: 20px;font-size: 20px;text-align: center;font-weight: bold;}
+    .deleteOption:hover {background: linear-gradient(#0000, #ddd);}
+    .nameLinkDelete {margin: 5px 0;color: #333;}
