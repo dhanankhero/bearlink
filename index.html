@@ -4,44 +4,68 @@
 		<meta charset="utf-8">
 		<title>BearLink</title>
 		<link rel="stylesheet" href="base/aset/css/homeStyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 	</head>
 	<body>
 		<div class="navbarContainer">
+			<a href="http://localhost/bearlink/"><img src="base/aset/mainImage/logoRaster.png" alt="" class="logoBearlink"></a>
 			<nav>
 				<ul>
-					<li class="fleft logo">BEARLINK</li>
-					<li class="fright">TENTANG KAMI</li>
+					<a href="http://localhost/bearlink/"><li class="fleft logo">BEARLINK</li></a>
 					<li class="fright">BLOG</li>
+					<li class="fright">TENTANG KAMI</li>
 					<div class="clear"></div>
 				</ul>
 			</nav>
+			<div class="clear"></div>
+		</div>
+		<div class="loginContainer">
+			<form class="" action="index.html" method="post">
+				<input class="loginInput fleft" type="text" name="" value="" placeholder="Username">
+				<input class="loginInput fleft" type="password" name="" value="" placeholder="Password">
+				<input class="loginSubmit fleft" type="submit" name="" value="Masuk">
+				<div class="close fleft">
+					<i class='fas fa-times closeLogin'></i>
+				</div>
+			</form>
 		</div>
 		<div class="headbarContainer">
 			<div class="judulHead">
-				<h2 class="titleSection">Link yang terstruktur<br/>dan mudah di Akses<br></h2><br>
-				<a href="#" class="buttonDaftar">Daftar Sekarang</a>
-				<a href="#" class="buttonLogin">Masuk</a>
-			</div>
-		</div>
-		<div class="articleContainer">
-			<div class="judulHead">
-				<h2 class="titleSection">Blog<br></h2><br>
-				<div class="colBlogContainer">
-					<div class="colBlog fleft">
-
-					</div>
-					<div class="colBlog fleft">
-
-					</div>
-					<div class="colBlog fleft">
-
-					</div>
-					<div class="colBlog fleft">
-
-					</div>
-					<div class="clear"></div>
+				<h2 class="titleSection">Link yang terstruktur<br/>dan mudah di Akses<br></h2>
+				<div class="actLogin">
+					<a href="daftar/" class="buttonDaftar">Daftar Sekarang</a>
+					<a href="#" class="buttonLogin">Masuk</a>
+				</div>
+				<div class="actGoToDashboard">
+					<a href="#" class="buttonDaftar">Boxlink Panel</a>
 				</div>
 			</div>
+			<div class="personSession">
+				<div class="personAvatar fright">
+					<img src="base/aset/mainImage/logoRaster.png" alt="">
+				</div>
+				<div class="nameContainer fright">
+					<div class="personName">
+						Dhanang Bagus Setuawa
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<script>
+			$('.buttonLogin').click(function(e){
+				e.preventDefault();
+				$('.loginContainer').slideDown('fast');
+			});
+			$('.close').click(function(e){
+				e.preventDefault();
+				$('.loginContainer').slideUp('fast');
+			});
+		</script>
+		<div class="footerSection">
+			Hey, tolong jangan lihat bawahan ku
 		</div>
 	</body>
 </html>
