@@ -1,5 +1,5 @@
 * {box-sizing: border-box;}
-body {padding: 0;margin: 0;font-family: 'Roboto', sans-serif;}
+body {padding: 0;margin: 0;font-family:'Avenir LT Std 55 Roman';font-weight:normal}
 a {color: inherit;text-decoration: none;}
 
 .fleft {float: left;}
@@ -8,7 +8,7 @@ a {color: inherit;text-decoration: none;}
 .space {height: 25px}
 .space2 {height: 200px}
 .space3 {height: 300px}
-.titleSection {font-size: 55px;font-weight: normal;color: #999;line-height: 1.6em;margin: 0;}
+.titleSection {font-size: 55px;font-family:'Avenir LT Std 35 Light';font-weight:normal;color: #999;line-height: 1.6em;margin: 0;}
 .containerUtama {width: 600px;margin: 0 auto;}
 
 .navbarContainer, .headbarContainer, .articleContainer {position: relative;box-shadow: 0 5px 10px #0001;}
