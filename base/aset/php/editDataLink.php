@@ -2,21 +2,21 @@
 
 include 'bearConnection.php';
 
-if (!empty($_POST['editId'])) {
-  $id = $_POST['editId'];
+if (!empty($_POST['id'])) {
+  $id = $_POST['id'];
   $namaLink = $_POST['editNamaLink'];
   $isiLink = $_POST['editIsiLink'];
-  $checkView = $_POST['editCheckView'];
+  $checkView = $_POST['checkView'];
 
   if ($checkView == 'on') {
-    $dataCheck = 'checked';
+    $checkView = 'checked';
   }
   else {
-    $dataCheck = 'unchecked';
+    $checkView = 'unchecked';
   }
 
-  $sql = "UPDATE `sysdb-dhanank` SET `name-link` = '$namaLink', `url-link` = '$isiLink', `view-link` = '$checkView' WHERE `sysdb-dhanank`.`id` = $id";
-  mysqli_query($koneksi, $sql);
+  $sql = "UPDATE `sysdb-dhanank` SET `name-link` = '$namaLink', `url-link` = '$isiLink', `view-link` = '$checkView' WHERE `id` = $id";
+  $query = mysqli_query($koneksi, $sql);
 }
 
  ?>

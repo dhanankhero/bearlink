@@ -43,6 +43,7 @@
     <div class="editor-container">
       <div class="addButton">
         <div class="addButtonLink">
+          <a href="boxlink.php" class="buttonActMaster">Boxlink</a>
           <a href="#" class="buttonActMaster" id="addUrlData">Tambah URL</a>
           <a href="#" class="buttonActMaster" id="asda">Data URL</a>
         </div>
@@ -53,9 +54,9 @@
         <div class="addDataContainer cnmd">
           <div class="judulButtonPopUp">
             <div class="editedTitlePopup fkiri">
-              <h1><i class='fas fa-times closePopUp'></i> Tambah URL</h1>
+              <h1><i class='fas fa-times closePopUp'>Close</i> Tambah URL</h1>
             </div>
-            <div class="lookMode fkanan">
+            <div class="lookMode fkanan posMiddle">
               <label class="switch">
                 <input type="checkbox" name="checkView">
                 <span class="slider round"></span>
@@ -71,9 +72,7 @@
         </div>
       </form>
       </div>
-      <script>
 
-      </script>
       <div class="listData">
 
         <?php
@@ -82,13 +81,103 @@
         $query = mysqli_query($koneksi,$sql);
 
         while ($data = mysqli_fetch_array($query)){
-          echo "<div class='buttonData'><div class='viewStats'><div class='shadow-stats' id='stats_".$data['id']."'><div class='contentStatsContainer'><div class='judulButtonPopUp'><h1><i class='fas fa-times closePopUp'></i> ".$data['name-link']."</h1></div><div class='contentStats'>".$data['stat-link']."</div><div class='keterangan'>Total kunjungan</div></div></div></div><div class='shadow-popup' id='shadow_".$data['id']."'><form id='editDataLink_".$data['id']."' action='index.html' method='post'><div class='content-popup cnmd'><div class='judulButtonPopUp'><div class='editedTitlePopup fkiri'><h1><i class='fas fa-times closePopUp'></i> Edit ".$data['name-link']."</h1></div><div class='lookMode fkanan'><label class='switch'><input type='checkbox' ".$data['view-link']." name='editCheckView'><span class='slider round' title='View Mode'></span></label></div><div class='clr'></div></div><div class='popUpContentContainer'><input type='text' name='editNamaLink' value='".$data['name-link']."' class='urlCustom'><input type='text' name='editIsiLink' value='".$data['url-link']."' class='urlCustom'><input type='button' name='editData' value='RAAAWWRR' class='submitURL' onclick='editLinkData(".$data['id'].")'></div></div></form></div><div class='buttonDataContainer'><div class='dragMe fkiri'><i class='fas fa-ellipsis-v'></i></div><div class='buttonList fkiri mdle'><div class='judulButton'>".$data['name-link']."</div><div class='linkButton'>".$data['url-link']."</div></div><div class='linkTool'><i class='fas fa-chart-line' id='statsButton_".$data['id']."'></i><i class='fas fa-cog' id='boxLink_".$data['id']."'></i><i class='far fa-trash-alt' id='delete_".$data['id']."' style='color:red'></i></div><div class='clr'></div></div></div>";
+          echo "
+          <div class='buttonData'>
+          <div class='viewStats'>
+          <div class='shadow-stats' id='stats_".$data['id']."'>
+          <div class='contentStatsContainer'>
+          <div class='judulButtonPopUp'>
+          <h1><i class='fas fa-times closePopUp'>Close</i> ".$data['name-link']."</h1>
+          </div>
+          <div class='contentStats'>".$data['stat-link']."</div>
+          <div class='keterangan'>Total kunjungan</div>
+          </div>
+          </div>
+          </div>
+          <div class='buttonDataContainer'>
+          <div class='dragMe fkiri'>
+          <i class='fas fa-ellipsis-v'>|</i>
+          </div>
+          <div class='buttonList fkiri mdle'>
+          <div class='judulButton'>".$data['name-link']."</div>
+          <div class='linkButton'>".$data['url-link']."</div>
+          </div>
+          <div class='linkTool'>
+          <i class='fas fa-chart-line' id='statsButton_".$data['id']."'>Stats</i>
+          <a href='editlink.php?id=".$data['id']."'><i class='fas fa-cog' id='boxLink_".$data['id']."'>Cog</i></a>
+          <i class='far fa-trash-alt' id='delete_".$data['id']."' style='color:red'>Delete</i>
+          </div>
+          <div class='clr'></div>
+          </div>
+          </div>";
 
-          echo "<div class='deleteShadowContainer' id='deleteLink_".$data['id']."'><div class='shadownAddButton'></div><div class='deleteDataContainer cnmd' id='dataDelete_".$data['id']."'><div class='judulButtonPopUp'><div class='editedTitlePopup fkiri'><h1><i class='fas fa-times closePopUp'></i>&nbsp;&nbsp;Delete ".$data['name-link']."</h1></div><div class='clr'></div></div><div class='deleteOptionContainer'><a href='#' ><div class='deleteOption fkiri' onclick='deleteLink(".$data['id'].")' >Ya</div></a><a href='#'><div class='deleteOption fkiri closePopUp rekomendAct'>Tidak</div></a><div class='clr'></div></div></div></div>";
+          echo "
+          <div class='deleteShadowContainer' id='deleteLink_".$data['id']."'>
+          <div class='shadownAddButton'></div>
+          <div class='deleteDataContainer cnmd' id='dataDelete_".$data['id']."'>
+          <div class='judulButtonPopUp'>
+          <div class='editedTitlePopup fkiri'>
+          <h1><i class='fas fa-times closePopUp'>Delete</i>&nbsp;&nbsp;Delete ".$data['name-link']."</h1>
+          </div>
+          <div class='clr'></div>
+          </div>
+          <div class='deleteOptionContainer'>
+          <a href='#'><div class='deleteOption fkiri' onclick='deleteLink(".$data['id'].")' >Ya</div></a>
+          <a href='#'><div class='deleteOption fkiri closePopUp rekomendAct'>Tidak</div></a>
+          <div class='clr'>
+          </div>
+          </div>
+          </div>
+          </div>";
 
-          echo "<script>$(function() { $('#boxLink_".$data['id']."').click(function(e) { e.preventDefault();$('#shadow_".$data['id']."').fadeIn('fast');});$('.closePopUp').click(function(e) { $('.content-popup');e.preventDefault();$('.shadow-popup').fadeOut('fast');});$('#statsButton_".$data['id']."').click(function(s) { s.preventDefault();$('#stats_".$data['id']."').fadeIn('fast');});$('.closePopUp').click(function(s) { $('.content-popup');s.preventDefault();$('.shadow-stats').fadeOut('fast');});});</script>";
+          echo "
+          <script>
 
-          echo "<script>$(function() { $('#delete_".$data['id']."').click(function(c) { c.preventDefault(); $('#deleteLink_".$data['id']."').fadeIn('fast'); }); $('.closePopUp').click(function(c) { $('#dataDelete_'); c.preventDefault(); $('#deleteLink_".$data['id']."').fadeOut('fast'); }); });</script>";
+
+            $('.closePopUp').click(function(e) {
+              $('.content-popup');
+              e.preventDefault();
+              $('.shadow-popup').fadeOut('fast');
+            });
+              $('#statsButton_".$data['id']."').click(function(s) {
+                s.preventDefault();
+                $('#stats_".$data['id']."').fadeIn('fast');
+              });
+              $('.closePopUp').click(function(s) {
+                $('.content-popup');
+                s.preventDefault();
+                $('.shadow-stats').fadeOut('fast');
+              });
+            </script>";
+
+          echo "
+          <script>
+          $(function() {
+            $('#delete_".$data['id']."').click(function(c) {
+              c.preventDefault();
+              $('#deleteLink_".$data['id']."').fadeIn('fast');
+            });
+            $('.closePopUp').click(function(c) {
+              $('#dataDelete_');
+              c.preventDefault();
+              $('#deleteLink_".$data['id']."').fadeOut('fast');
+            });
+          });
+
+          // edit data
+          function editLinkData(id) {
+            $.ajax({
+              url : 'aset/php/editDataLink.php',
+              type : 'GET',
+              data : 'id='+id,
+              data : 'id='+i2,
+              success : function(data) {
+                $('.link-container').load('aset/php/tampilLinkViewMode.php');
+                $('.listData').load('aset/php/tampilLink.php');
+              }
+            });
+          };
+          </script>";
         }
 
          ?>
@@ -110,7 +199,7 @@
       echo "</div>";
       echo "<div class='link-container'>";
 
-      $sqlView = "SELECT * FROM `sysdb-dhanank` ORDER BY `sysdb-dhanank`.`id` ASC";
+      $sqlView = "SELECT * FROM `sysdb-dhanank` WHERE `view-link`='checked' ORDER BY `sysdb-dhanank`.`id` ASC";
       $queryView = mysqli_query($koneksi,$sqlView);
 
       while ($dataView = mysqli_fetch_array($queryView)){
@@ -123,8 +212,8 @@
       echo "</a>";
       echo "</div>";
 
-    }
-    echo "</div>";
+      }
+      echo "</div>";
 
        ?>
 
@@ -177,7 +266,18 @@
         });
       };
 
-
+      // Edit Link Data
+      // function editLinkData(id) {
+      //   $.ajax({
+      //     url : "aset/php/editDataLink.php",
+      //     type : "POST",
+      //     data : 'id='+id,
+      //     success : function(data) {
+      //       $('.link-container').load("aset/php/tampilLinkViewMode.php");
+      //       $('.listData').load("aset/php/tampilLink.php");
+      //     }
+      //   });
+      // };
     </script>
 
   </body>

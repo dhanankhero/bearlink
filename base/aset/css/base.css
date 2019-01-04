@@ -3,11 +3,14 @@ body {padding: 0;margin: 0;font-family: sans-serif;}
 a {color: #000}
 .clr {clear: both;}
 .algn-cntr {position: relative !important;}
+.txt-alg-cntr {text-align: center;}
 .cntr {position: absolute;left: 50%;transform: translateX(-50%);}
 .mdle {position: absolute;top: 50%;transform: translateY(-50%);}
 .cnmd {position: absolute;top: 50%;left: 50%;transform: translateY(-50%) translateX(-50%);}
 .fkiri {float: left;}
 .fkanan {float: right;}
+.kri {position: absolute;left: 0;}
+.knn {position: absolute;right: 0;}
 .space {height: 200px}
 .spaceDelete {padding: 25px;border-bottom: 1px solid #ccc;font-size: 20px; color: #bbb}
   .spaceDelete p {padding: 0;margin: 10px 0 0;font-size: 14px}
@@ -71,3 +74,15 @@ a {color: #000}
   .deleteOption {width: 50%;padding: 20px;font-size: 20px;text-align: center;font-weight: bold;}
     .deleteOption:hover {background: linear-gradient(#0000, #ddd);}
     .nameLinkDelete {margin: 5px 0;color: #333;}
+
+.titleSection {font-size: 55px;font-weight: normal;color: #999;line-height: 1.6em;margin: 0;}
+.standartForm {width: 100%;padding: 10px 20px;font-size: 24px;box-shadow: inset 0 0 0 3px #ddd;border: 0;border-radius: 5px;margin: 5px 0 15px}
+.standartForm:focus {box-shadow: inset 0 0 0 3px #f48b06;outline: none}
+.standartSpan {font-size: 14px;color: #999;}
+.standarSubmit {padding: 20px 40px;border-radius: 50px;font-size: 20px;box-shadow: 0 2px 10px #ccc;margin: 20px auto;border: 0;background: linear-gradient(45deg, #f48b06, #aa1c00);color: #fff;}
+.standarLogin {padding: 20px 40px;border-radius: 50px;font-size: 20px;margin: 20px auto;border: 0;color: #f48b06;background-color: #fff}
+.standarSubmit, .standarLogin {outline: 0;cursor: pointer;}
+
+.editTitle {position: relative;}
+.judulEdit {padding: 20px 0}
+#listDataLink {display: none;}
