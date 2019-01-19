@@ -1,4 +1,4 @@
-body {padding: 0;margin: 0;font-family:'Avenir LT Std 55 Roman';font-weight:normal}
+body {padding: 0;margin: 0;font-family:'Avenir LT Std 55 Roman';}
 * {box-sizing: border-box;}
 a {color: #000}
 .clr {clear: both;}
@@ -14,29 +14,31 @@ a {color: #000}
 .space {height: 200px}
 .spaceDelete {padding: 25px;border-bottom: 1px solid #ccc;font-size: 20px; color: #bbb}
   .spaceDelete p {padding: 0;margin: 10px 0 0;font-size: 14px}
-  .rekomendAct {background: linear-gradient(#D5A253, #b38032);color: #fff !important}
-    .rekomendAct:hover {background: linear-gradient(#c39247, #9f7129) !important;}
+  .rekomendAct {background-color: #69c2bc;color: #fff !important}
+    .rekomendAct:hover {background-color: #35908a !important;}
 /* .spacer-button {height: 97px} */
 
 .navbar-container {background-color: #fff;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44);position: fixed;top: 0;width: 100%;z-index: 99;}
   .navbar-container ul {list-style-type: none;padding: 0;margin: 0}
   .navbar-container ul li {float: left;padding: 10px;font-size: 13px;}
   .boxData {background-color: #f2f2f2;color: #888;padding: 8.5px 15px !important;font-size: 16px !important}
-  .copyData {background: linear-gradient(#D5A253, #b38032);color: #fff;padding: 10px 30px !important}
-  .link-home {background: linear-gradient(#D5A253, #b38032);color: #fff;}
+  .copyData {padding: 10px 30px !important}
+  .link-home, .copyData {background-color: #69c2bc;color: #fff;}
+  .link-home:hover, .copyData:hover {background-color: #35908a;}
 
 
 .editor-container {height: calc(100% - 35px);margin-top: 35px;position: absolute;width: 70%;overflow: auto;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44)}
 .addButton {}
   .addButtonLink {padding: 30px;width: 100%;font-size: 25px;background-color: #fff;box-shadow: 0 2px 5px #ddd}
-  .buttonActMaster {background-color: #fff;padding: 10px 25px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 20px}
+  .buttonActMaster {background-color: #fff;padding: 14px 25px 11px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 10px}
 
   .listData {padding: 30px;}
-    .buttonData {width: 100%;margin-bottom: 2px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
+    .buttonData {width: 100%;margin-bottom: 5px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
     .buttonDataContainer {position: relative;}
     .buttonList {padding: 5px 0 5px 10px;width: calc(100% - 28px);left: 30px}
     .dragMe {padding: 0px 10px;height: 68px;background-color: #f4f4f4;color: #9c9c9c;display: table;cursor: move;border-right: 1px solid #eeeeee;}
       .dragMe i {display: table-cell;vertical-align: middle;font-size: 14px}
+      .checkedstatus {background-color: #69c2bc;color: #fff}
     .judulButton {font-size: 20px;line-height: 15px;padding: 2.5px}
     .linkButton, .linkTool {font-size: 15px;line-height: 20px;padding: 2.5px}
     .linkButton {color: #3a4345}
@@ -52,10 +54,11 @@ a {color: #000}
     .judulButtonPopUp h1 {margin: 0}
   .popUpContentContainer {padding: 0}
   .urlCustom {width: calc(100% - 40px);border: 0;border-bottom: 1px solid #ddd;font-size: 16px;padding: 20px;background-color: #0000;margin: 10px 20px 0}
-    .urlCustom:focus {outline: 0;border-bottom: 1px solid #D5A253;}
-  .submitURL {width: 100%;padding: 20px;background: linear-gradient(#D5A253, #b38032);color: #fff;border: 0;font-size: 20px;cursor: pointer;margin-top: 20px;font-weight: bold;}
-  .submitURL:hover {background: linear-gradient(#c39247, #9f7129)}
-  .closePopUp {color: #D5A253;cursor: pointer;}
+    .urlCustom:focus {outline: 0;border-bottom: 1px solid #69c2bc;}
+  .submitURL {width: 100%;padding: 20px;background-color: #69c2bc;color: #fff;border: 0;font-size: 20px;cursor: pointer;margin-top: 20px;font-weight: bold;}
+  .submitURL:hover {background-color: #35908a;}
+  .closePopUp {color: #69c2bc;cursor: pointer;}
+    .closePopUp:hover {color: #35908a;}
 
 .shadow-stats {width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.50);position: fixed;z-index: 9999;display: none;top: 0;left: 0}
 .contentStatsContainer {min-width: 300px;max-width: 700px;background-color: #fff;box-shadow: 0 0 60px rgba(0, 0, 0, 0.50);border-radius: 5px;position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);}
@@ -72,17 +75,19 @@ a {color: #000}
 
 .deleteOptionContainer {position: relative;}
   .deleteOption {width: 50%;padding: 20px;font-size: 20px;text-align: center;font-weight: bold;}
-    .deleteOption:hover {background: linear-gradient(#0000, #ddd);}
     .nameLinkDelete {margin: 5px 0;color: #333;}
 
 .titleSection {font-size: 55px;font-weight: normal;color: #999;line-height: 1.6em;margin: 0;}
 .standartForm {width: 100%;padding: 10px 20px;font-size: 24px;box-shadow: inset 0 0 0 3px #ddd;border: 0;border-radius: 5px;margin: 5px 0 15px}
-.standartForm:focus {box-shadow: inset 0 0 0 3px #f48b06;outline: none}
+.standartForm:focus {box-shadow: inset 0 0 0 3px #69c2bc;outline: none}
 .standartSpan {font-size: 14px;color: #999;}
-.standarSubmit {padding: 20px 40px;border-radius: 50px;font-size: 20px;box-shadow: 0 2px 10px #ccc;margin: 20px auto;border: 0;background: linear-gradient(45deg, #f48b06, #aa1c00);color: #fff;}
+.standarSubmit {padding: 20px 40px;border-radius: 50px;font-size: 20px;box-shadow: 0 2px 10px #ccc;margin: 20px auto;border: 0;background-color: #69c2bc;color: #fff;}
 .standarLogin {padding: 20px 40px;border-radius: 50px;font-size: 20px;margin: 20px auto;border: 0;color: #f48b06;background-color: #fff}
 .standarSubmit, .standarLogin {outline: 0;cursor: pointer;}
 
 .editTitle {position: relative;}
 .judulEdit {padding: 20px 0}
 #listDataLink {display: none;}
+
+#sortable li {height: 72px;list-style-type: none;}
+#sortable {padding: 0;margin: 0}

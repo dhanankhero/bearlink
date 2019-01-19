@@ -3,70 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<title>BearLink</title>
-		<link rel="stylesheet" href="base/aset/css/homeStyle.css">
+		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="base/aset/font/bearfont.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="navbarContainer">
-			<a href="http://localhost/bearlink/"><img src="base/aset/mainImage/logoRaster.png" alt="" class="logoBearlink"></a>
-			<nav>
-				<ul>
-					<a href="http://localhost/bearlink/"><li class="fleft logo">BEARLINK</li></a>
-					<li class="fright">BLOG</li>
-					<li class="fright">TENTANG KAMI</li>
-					<div class="clear"></div>
-				</ul>
-			</nav>
-			<div class="clear"></div>
-		</div>
-		<div class="loginContainer">
-			<form class="" action="index.html" method="post">
-				<input class="loginInput fleft" type="text" name="" value="" placeholder="Username">
-				<input class="loginInput fleft" type="password" name="" value="" placeholder="Password">
-				<input class="loginSubmit fleft" type="submit" name="" value="Masuk">
-				<div class="close fleft">
-					<i class='fas fa-times closeLogin'></i>
+		<section class="container-main">
+			<div class="navbar">
+				<div class="fleft logo">
+					BearLink
 				</div>
-			</form>
-		</div>
-		<div class="headbarContainer">
-			<div class="judulHead">
-				<h2 class="titleSection">Link yang terstruktur<br/>dan mudah di Akses<br></h2>
-				<div class="actLogin">
-					<a href="daftar/" class="buttonDaftar">Daftar Sekarang</a>
-					<a href="#" class="buttonLogin">Masuk</a>
-				</div>
-				<div class="actGoToDashboard">
-					<a href="#" class="buttonDaftar">Boxlink Panel</a>
-				</div>
-			</div>
-			<div class="personSession">
-				<div class="personAvatar fright">
-					<img src="base/aset/mainImage/logoRaster.png" alt="">
-				</div>
-				<div class="nameContainer fright">
-					<div class="personName">
-						Dhanang Bagus Setyawan
-					</div>
+				<div class="navbar-menu-container">
+					<ul class="navbar-menu">
+						<li class="menu">About Us</li>
+						<li class="menu">Blog</li>
+					</ul>
 				</div>
 				<div class="clear"></div>
-			</div>
-		</div>
-		<script>
-			$('.buttonLogin').click(function(e){
-				e.preventDefault();
-				$('.loginContainer').slideDown('fast');
-			});
-			$('.close').click(function(e){
-				e.preventDefault();
-				$('.loginContainer').slideUp('fast');
-			});
-		</script>
-		<div class="footerSection">
-			Hey, tolong jangan lihat bawahan ku
-		</div>
+			</div> 
+		</section>
 	</body>
 </html>

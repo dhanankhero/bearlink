@@ -1,0 +1,13 @@
+Untuk menampilkan Profil kecil
+
+<div class="personSession">
+  <div class="personAvatar fright">
+    <img src="base/aset/mainImage/logoRaster.png" alt="">
+  </div>
+  <div class="nameContainer fright">
+    <div class="personName">
+      <?php echo $_SESSION['username'] ?>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>

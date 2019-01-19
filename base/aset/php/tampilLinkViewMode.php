@@ -7,13 +7,14 @@ $queryView = mysqli_query($koneksi,$sqlView);
 
 while ($dataView = mysqli_fetch_array($queryView)){
 
-echo "<div class='style-button'>";
-echo "<a href='".$dataView['url-link']."' class='link'>";
-echo "<div class='button'>";
-echo $dataView['name-link'];
-echo "</div>";
-echo "</a>";
-echo "</div>";
+echo "
+<div class='style-button'>
+<a href='".$dataView['url-link']."' class='link'>
+<div class='button'>
+".$dataView['name-link']."
+</div>
+</a>
+</div>";
 
 }
 

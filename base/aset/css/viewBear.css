@@ -6,6 +6,6 @@ a {text-decoration: none;color: inherit;}
 .nama {text-align: center;padding: 20px 20px 0;font-weight: bold;font-size: 20px;font-family: 'Quicksand', sans-serif;}
 
 .link-container {padding: 20px;position: relative;}
-.button {padding: 15px;background: linear-gradient(#D5A253, #b38032);text-align: center;color: #fff;margin-bottom: 20px;font-family: 'Quicksand', sans-serif;font-size: 20px;font-weight: bold;border-radius: 5px}
-.button:hover {background: linear-gradient(#c39247, #9f7129);}
+.button {padding: 15px;background-color: #69c2bc;text-align: center;color: #fff;margin-bottom: 20px;font-family: 'Quicksand', sans-serif;font-size: 20px;font-weight: bold;border-radius: 5px}
+.button:hover {background-color: #35908a;}
 .style-button {max-width: 700px;position: relative;left: 50%;transform: translateX(-50%);}

@@ -3,11 +3,11 @@ body {padding: 0;margin: 0;font-family: sans-serif;}
 a {color: inherit;text-decoration: none;}
 .clear {clear: both;}
 
-.navbarHomePage {position: fixed;width: 100%;top: 0;z-index: 99}
-.bearContainer {width: 1000px;margin: 0 auto;}
-  .bearContainer ul {margin: 0;padding: 0;list-style-type: none}
-  .bearContainer ul li {float: left;padding: 20px;font-size: 18px}
-  .aboutUs {padding-left: 0 !important;}
+.container-main {max-width: 1000px;margin: 0 auto}
 
-.headingHomePage {width: 100%;overflow: hidden;position: relative;height: 100vh;padding-top: 38px;background: linear-gradient(135deg,#62edb0,#5283fa)}
-  .greenAccHeadingHomePage {width: 1000px;height: 800px;background: linear-gradient(#51e233, #23be6a);border-radius: 100px;position: absolute;transform: rotate(-45deg);top: -150px;right: -200px}
+.fleft {float: left;}
+.navbar {position: relative;font-size: 20px;padding: 20px 0}
+.logo {font-weight: bold}
+.navbar-menu-container {position: absolute;left: 50%;transform: translateX(-50%)}
+.navbar-menu {list-style-type: none;padding: 0;margin: 0}
+  .menu {float: left;padding: 0 0 0 20px}
