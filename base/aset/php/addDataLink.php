@@ -1,5 +1,6 @@
 <?php
   include 'bearConnection.php';
+  include 'session.php';
 
   $namaLink = $_POST['namaLink'];
   $isiLink = $_POST['isiLink'];
@@ -10,7 +11,7 @@
   else {
     $dataCheck = 'unchecked';
   }
-  $sql = "INSERT INTO `sysdb-dhanank` (`id`, `name-link`, `url-link`, `view-link`, `stat-link`) VALUES (NULL, '$namaLink', '$isiLink', '$dataCheck', '0');";
+  $sql = "INSERT INTO `sysdb-$username` (`id`, `name-link`, `url-link`, `view-link`, `stat-link`) VALUES (NULL, '$namaLink', '$isiLink', '$dataCheck', '0');";
 
   if($koneksi -> query($sql))
   {

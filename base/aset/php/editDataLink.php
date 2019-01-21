@@ -1,6 +1,7 @@
 <?php
 
 include 'bearConnection.php';
+include 'session.php';
 
 if (!empty($_POST['id'])) {
   $id = $_POST['id'];
@@ -15,7 +16,7 @@ if (!empty($_POST['id'])) {
     $checkView = 'unchecked';
   }
 
-  $sql = "UPDATE `sysdb-dhanank` SET `name-link` = '$namaLink', `url-link` = '$isiLink', `view-link` = '$checkView' WHERE `id` = $id";
+  $sql = "UPDATE `sysdb-$username` SET `name-link` = '$namaLink', `url-link` = '$isiLink', `view-link` = '$checkView' WHERE `id` = $id";
   $query = mysqli_query($koneksi, $sql);
 }
 

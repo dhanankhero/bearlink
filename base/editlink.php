@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <?php include 'bearConnection.php'; ?>
+    <?php include 'aset/php/session.php'; ?>
   </head>
   <body>
     <?php include 'aset/builder/navbar.php'; ?>
@@ -54,7 +55,7 @@
 
             <?php
             $id = $_GET['id'];
-            $sql = "SELECT * FROM `sysdb-dhanank` WHERE id='$id'";
+            $sql = "SELECT * FROM `sysdb-$username` WHERE id='$id'";
             $query = mysqli_query($koneksi,$sql);
 
             while ($data = mysqli_fetch_array($query)){ ?>
