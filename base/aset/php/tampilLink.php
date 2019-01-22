@@ -1,11 +1,9 @@
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-
 <ul id="sortable">
 
 <?php
 
 include 'bearConnection.php';
-include 'session.php';
+require_once 'session.php';
 
 $sql = "SELECT * FROM `sysdb-$username` ORDER BY `sysdb-$username`.`sort` ASC";
 $query = mysqli_query($koneksi,$sql);
@@ -13,7 +11,7 @@ $query = mysqli_query($koneksi,$sql);
 while ($data = mysqli_fetch_array($query)){
   echo "
   <li class='ui-state-default' id='item-".$data['sort']."'>
-    <div class='buttonData'>
+    <div class='buttonData'> 
       <div class='viewStats'>
         <div class='shadow-stats' id='stats_".$data['id']."'>
           <div class='contentStatsContainer'>
@@ -116,11 +114,12 @@ while ($data = mysqli_fetch_array($query)){
 }
 
  ?>
-</ul>
 
-<script>
-$( function() {
-        $( "#sortable" ).sortable({ axis: "y", cursor: "move", containment: "parent" });
-        $( "#sortable" ).disableSelection({ axis: "y" });
-      } );
-</script>
+ </ul>
+
+ <script>
+  $( function() {
+    $( "#sortable" ).sortable({ axis: "y", cursor: "move", containment: "parent" });
+    $( "#sortable" ).disableSelection({ axis: "y" });
+  } );
+ </script>

@@ -15,6 +15,8 @@
       <li class="boxData">https://bearlink.id/eat/foltibaffiid</li>
     <a href="">
       <li class="copyData">Copy</li>
+      <a href="logout.php"><li class="copyData">Keluar <i class="fas fa-sign-out-alt"></i></li></a>
+      
     </a>
     <div class="clr"></div>
   </ul>

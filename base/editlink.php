@@ -3,19 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>BearLink</title>
-    <link rel="stylesheet" href="aset/css/base.css">
-    <link rel="stylesheet" href="aset/css/toggleBear.css">
-    <link rel="stylesheet" href="aset/css/scrollBar.css">
-    <link rel="stylesheet" href="aset/css/viewBear.css">
-    <link rel="stylesheet" href="aset/font/bearfont.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../base/aset/js/jquery-3.3.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <?php include 'bearConnection.php'; ?>
-    <?php include 'aset/php/session.php'; ?>
+    <?php include 'aset/builder/headinclude.php' ?>
   </head>
   <body>
     <?php include 'aset/builder/navbar.php'; ?>
