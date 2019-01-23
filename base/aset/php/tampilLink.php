@@ -103,14 +103,6 @@ while ($data = mysqli_fetch_array($query)){
     </li>
   ";
 
-  echo "
-  ";
-
-  echo "
-  ";
-
-  echo "
-  ";
 }
 
  ?>
