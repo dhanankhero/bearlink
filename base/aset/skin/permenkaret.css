@@ -1,0 +1,15 @@
+* {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box}
+body {padding: 0;margin: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color: #fdf6fa}
+a {color: inherit;text-decoration: none}
+
+.box-container {max-width: 500px;margin: 0 auto}
+
+.head {width: 100%;padding: 50px 0;text-align: center;}
+
+.img-wrap {width: 200px;height: 200px;background-color: antiquewhite;border-radius: 50%;margin: 0 auto}
+    .head h2 {font-size: 30px;font-weight: normal;color: #333}
+
+.content-container {position: relative;}
+    .content-container ul {list-style-type: none;margin: 0;padding: 0}
+    .content-container ul a li {padding: 20px;background-color: #ffaaa6;border-radius: 10px;margin: 10px 20px;text-align: center;color: #fff}
+    .content-container ul a li:hover {background-color: #ff8c94;color: #fff}
