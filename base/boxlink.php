@@ -45,22 +45,21 @@
 
       <?php
 
-      echo "<div class='header'>";
-      echo "<div class='foto'>";
-      echo "<img src='http://dhunsdevice/avatar/7.JPG' alt=''>";
-      echo "</div>";
-      echo "<div class='nama'>";
-      echo "@timunmuslim";
-      echo "</div>";
-      echo "</div>";
-      echo "<div class='link-container'>";
+      echo "<div class='header'>
+      <div class='foto'>
+      <img src='http://dhunsdevice/avatar/7.JPG' alt=''>
+      </div>
+      <div class='nama'>";
+      echo "@" . $username;
+      echo "</div>
+      </div>
+      <div class='link-container'>";
 
       include 'aset/php/tampilLinkViewMode.php';
 
       echo "</div>";
 
        ?>
-
     </div>
 
     <script type="text/javascript">
@@ -115,6 +114,6 @@
         $( "#sortable" ).disableSelection({ axis: "y" });
       } );
     </script>
-
+    
   </body>
 </html>

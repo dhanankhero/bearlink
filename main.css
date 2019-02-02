@@ -1,0 +1,38 @@
+#navbar {position: relative;}
+.bear-navbar {background-color: #eee;position: relative;}
+.t-center {text-align: center;width: 100px;margin: 0 auto;font-size: 20px;padding: 20px}
+.navbar-item {position: absolute;top: 50%;right: 20px;transform: translateY(-50%)}
+.navbar-item ul {list-style-type: none}
+.navbar-item ul a li {float: left;padding: 0 20px}
+.clr {clear: both;}
+a {color: inherit !important; text-decoration: none !important}
+
+#jumbotron {background-color: #fafafa;height: calc(100vh - 70px);}
+.bear-container {max-width: 1000px; margin: 0 auto;position: relative;height: 100%;}
+.contentron {position: absolute;top: 50%;transform: translateY(-50%)}
+
+#login {position: absolute;top: 75px;right: 5px;display: none;}
+.login-container {width: 300px;background-color: #fff;border: 1px solid #ccc;border-radius: 10px;overflow: hidden;box-shadow: 0 5px 20px #0002}
+    .nl-login {float: left;width: 50%;text-align: center;padding: 10px}
+    .nl-register {float: left;width: 50%;text-align: center;padding: 10px}
+.login-container h3 {font-size: 20px;margin: 0 0 20px;text-align: center}
+    .login {padding: 20px 5px}
+    .register {padding: 20px 5px}
+#register-hide {display: none}
+
+.form-design {width: calc(100% - 40px);margin: 0 20px;border: 0;border-bottom: 1px solid #ccc;padding: 10px}
+    .form-design:focus {outline: 0;border-bottom: 1px solid #999}
+    .submit-design {width: calc(100% - 40px);margin: 0 20px;border: 0;padding: 20px 10px;background-color: #0000}
+    .submit-design:focus {outline: 0;font-weight: bold}
+    .submit-design:hover {cursor: pointer;font-weight: bold}
+
+#footer {background-color: #eee;padding: 40px}
+    #footer footer {text-align: center}
+    #footer footer a {padding: 0 20px}
+
+@media only screen and (max-width: 1000px) {
+    #jumbotron {padding: 40px}
+}
+@media only screen and (max-width: 550px) {
+    .t-center {text-align: left;width: 100px;margin: 0 !important;font-size: 20px;padding: 20px}
+}
