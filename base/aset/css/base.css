@@ -19,10 +19,11 @@ a {color: #000}
 /* .spacer-button {height: 97px} */
 
 .navbar-container {background-color: #fff;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44);position: fixed;top: 0;width: 100%;z-index: 99;}
-  .navbar-container ul {list-style-type: none;padding: 0;margin: 0}
+  .navbar-container ul {list-style-type: none;padding: 0;margin: 0;}
   .navbar-container ul li {float: left;padding: 10px;font-size: 13px;}
-  .boxData {background-color: #f2f2f2;color: #888;padding: 8.5px 15px !important;font-size: 16px !important}
-  .copyData {padding: 10px 30px !important}
+  .linkDetail {float: right;}
+  .boxData {background-color: #f2f2f2;color: #888;padding: 8.5px 15px !important;font-size: 16px !important;border: 0;margin: 0;float: left;padding: 10px;font-size: 13px;}
+  .copyData {padding: 10px 30px !important;border: 0;margin: 0;float: left;padding: 10px;font-size: 13px;}
   .link-home, .copyData {background-color: #69c2bc;color: #fff;}
   .link-home:hover, .copyData:hover {background-color: #35908a;}
 

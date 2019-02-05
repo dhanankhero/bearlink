@@ -1,3 +1,6 @@
+body {font-family: sans-serif}
+* {box-sizing: border-box}
+
 #navbar {position: relative;}
 .bear-navbar {background-color: #eee;position: relative;}
 .t-center {text-align: center;width: 100px;margin: 0 auto;font-size: 20px;padding: 20px}
@@ -36,3 +39,53 @@ a {color: inherit !important; text-decoration: none !important}
 @media only screen and (max-width: 550px) {
     .t-center {text-align: left;width: 100px;margin: 0 !important;font-size: 20px;padding: 20px}
 }
+
+#account-menu {}
+.menu-container {width: 200px;background-color: #fff;border: 1px solid #ccc;border-radius: 10px;overflow: hidden;box-shadow: 0 5px 20px #0002;padding: 10px 0;}
+    .menu-container ul {padding: 0;margin: 0;list-style-type: none}
+    .menu-container ul a li {text-align: center;padding: 10px;}
+    .menu-container ul a li:hover {background-color: #eee}
+
+#choose-theme {width: 100%;overflow: auto;cursor: grab;}
+#choose-theme::-webkit-scrollbar {height: 0;}
+    .theme-container {padding: 10px;width: 1890px;}
+    .theme-item {max-width: 175px;min-width: 150px;min-height: 100px;float: left;margin: 10px}
+    .theme-preview {width: 100%;padding: 1px 0;}
+        .colorname1 {padding: 1px;border-radius: 60px}
+        .colorname2 {height: 40px;margin: 10px;border-radius: 50px}
+    .theme-item h2 {font-weight: normal;font-size: 14px;margin: 0;text-align: center;padding: 10px}
+
+/* Skin Package */
+/* ceria */
+.ceria1 {background-color: #fffdef;box-shadow: 0 2px 10px #0005}
+.ceria2 {background-color: #ffd858;box-shadow: inset 0 2px 10px #0005}
+/* coklat manis */
+.coklatmanis1 {background-color: #e6d7c9;box-shadow: 0 2px 10px #0005}
+.coklatmanis2 {background-color: #a96851;box-shadow: inset 0 2px 10px #0005}
+/* daun */
+.daun1 {background-color: #d6f8b8;box-shadow: 0 2px 10px #0005}
+.daun2 {background-color: #acdeaa;box-shadow: inset 0 2px 10px #0005}
+/* dheafault */
+.dheafault1 {background-color: #fff;box-shadow: 0 2px 10px #0005}
+.dheafault2 {background-color: #69c2bc;box-shadow: inset 0 2px 10px #0005}
+/* gunung berapi */
+.gunungberapi1 {background-color: #313131;box-shadow: 0 2px 10px #0005}
+.gunungberapi2 {background-color: #525252;box-shadow: inset 0 2px 10px #0005}
+/* laut malam */
+.lautmalam1 {background-color: #071e3d;box-shadow: 0 2px 10px #0005}
+.lautmalam2 {background-color: #1f4287;box-shadow: inset 0 2px 10px #0005}
+/* mawar hitam */
+.mawarhitam1 {background-color: #0f0766;box-shadow: 0 2px 10px #0005}
+.mawarhitam2 {background-color: #ab0e86;box-shadow: inset 0 2px 10px #0005}
+/* monokrome */
+.monokrome1 {background-color: #e7e3e3;box-shadow: 0 2px 10px #0005}
+.monokrome2 {background-color: #bfbcbc;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.permenkaret1 {background-color: #fdf6fa;box-shadow: 0 2px 10px #0005}
+.permenkaret2 {background-color: #ffaaa6;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.telurgosong1 {background-color: #303242;box-shadow: 0 2px 10px #0005}
+.telurgosong2 {background-color: #f2be8d;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.unguterong1 {background-color: #d5def5;box-shadow: 0 2px 10px #0005}
+.unguterong2 {background-color: #6643b5;box-shadow: inset 0 2px 10px #0005}

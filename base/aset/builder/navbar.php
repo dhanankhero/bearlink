@@ -10,7 +10,7 @@
     <div class="clr"></div>
   </ul>
   <ul class="fkanan">
-    <li class="boxData">https://bearlink.id/base/<?php echo $username ?></li>
+    <li class="boxData">https://bearlink.id/u/<?php echo $username ?></li>
     <a href="#"><li class="copyData">Copy</li></a>
     <a href="#" id="akun"><li class="copyData"><?php echo $name ?></li></a>
     <a href="logout.php"><li class="copyData">Keluar <i class="fas fa-sign-out-alt"></i></li></a>
