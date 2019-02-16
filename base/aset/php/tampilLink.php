@@ -29,7 +29,7 @@ while ($data = mysqli_fetch_array($query)){
         </div>
         <div class='buttonList fkiri mdle'>
           <div class='judulButton'>".$data['name-link']."</div>
-          <div class='linkButton'>".$data['url-link']."</div>
+          <div class='linkButton'><i>".$data['url-link']."</i></div>
         </div>
         <div class='linkTool'>
           <i class='fas fa-chart-line' id='statsButton_".$data['id']."' title='Total Kunjungan Link'></i>

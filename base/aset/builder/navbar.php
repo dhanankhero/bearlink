@@ -12,9 +12,9 @@
   <ul class="fkanan">
     <li class="boxData">https://bearlink.id/u/<?php echo $username ?></li>
     <a href="#"><li class="copyData">Copy</li></a>
-    <a href="#" id="akun"><li class="copyData"><?php echo $name ?></li></a>
-    <a href="logout.php"><li class="copyData">Keluar <i class="fas fa-sign-out-alt"></i></li></a>
+    <a href="#" id="akun"><li class="copyData" id="nama-akun"><?php echo $name ?></li></a>
     <div class="clr"></div>
   </ul>
   <div class="clr"></div>
 </div>
+<?php include 'optionAccount.php' ?>

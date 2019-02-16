@@ -9,6 +9,7 @@
 <script src="aset/js/jquery-3.3.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="aset/js/dragtoscroll.js"></script>
 <?php include 'bearConnection.php'; ?>
 <?php include 'aset/php/session.php'?>
 <?php include 'aset/php/brain.php'?>

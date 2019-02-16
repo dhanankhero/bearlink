@@ -9,7 +9,7 @@
     include '../base/aset/php/bearConnection.php';
     $getUsername = $_GET['user'];
     $sql = "SELECT * FROM `sysdb_member` WHERE username = '".$getUsername."'";
-    $sql2 = "SELECT * FROM `sysdb-$getUsername` ORDER BY `sysdb-$getUsername`.`sort` ASC";
+    $sql2 = "SELECT * FROM `sysdb-$getUsername` WHERE `view-link`='checked' ORDER BY `sysdb-$getUsername`.`sort` ASC";
     $query = mysqli_query($koneksi, $sql);
     $query2 = mysqli_query($koneksi,$sql2);
     

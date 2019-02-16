@@ -31,7 +31,8 @@ a {color: #000}
 .editor-container {height: calc(100% - 35px);margin-top: 35px;position: absolute;width: 70%;overflow: auto;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44)}
 .addButton {}
   .addButtonLink {padding: 30px;width: 100%;font-size: 25px;background-color: #fff;box-shadow: 0 2px 5px #ddd}
-  .buttonActMaster {background-color: #fff;padding: 14px 25px 11px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 10px}
+  .buttonActMaster {background-color: #fff;padding: 14px 25px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 10px}
+    .buttonActMaster:hover {box-shadow: 0 4px 15px #ccc;}
 
   .listData {padding: 30px;}
     .buttonData {width: 100%;margin-bottom: 5px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
@@ -42,7 +43,7 @@ a {color: #000}
       .checkedstatus {background-color: #69c2bc;color: #fff}
     .judulButton {font-size: 20px;line-height: 15px;    padding: 2.5px 2.5px 8px;}
     .linkButton, .linkTool {font-size: 15px;line-height: 20px;padding: 2.5px}
-    .linkButton {color: #3a4345}
+    .linkButton {color: #959899;padding-left: 10px}
     .linkTool {position: absolute;right: 15px;top: 50%;transform: translateY(-50%);font-size: 20px;color: #ccc}
       .linkTool i:hover {color: #888}
     .linkTool i {cursor: pointer;padding: 0 5px}
@@ -92,3 +93,62 @@ a {color: #000}
 
 #sortable li {height: 72px;list-style-type: none;}
 #sortable {padding: 0;margin: 0}
+
+/* Pilih Theme */
+#choose-theme {width: 100%;overflow: auto;cursor: grab;display: none;box-shadow: 0 4px 3px #0001}
+#choose-theme::-webkit-scrollbar {height: 0;}
+    .theme-container {padding: 10px 20px;width: 1910px;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select: none;-o-user-select:none;user-select:none;}
+    .theme-item {max-width: 175px;min-width: 150px;min-height: 100px;float: left;margin: 10px}
+    .theme-preview {width: 100%;padding: 1px 0;}
+        .colorname1 {padding: 1px;border-radius: 60px;cursor: pointer;}
+        .colorname1:hover {box-shadow: 0 5px 15px #0007}
+        .colorname2 {height: 40px;margin: 10px;border-radius: 50px;cursor: pointer;}
+    .theme-item h2 {font-weight: normal;font-size: 14px;margin: 0;text-align: center;padding: 10px}
+    .pilih-theme {width: 100%;padding: 20px;background-color: #69c2bc;color: #fff;border: 0;font-size: 20px;cursor: pointer;font-weight: bold;display: none;overflow: hidden;}
+    .pilih-theme:hover {background-color: #35908a;}
+  
+
+  .check-me {color:#fff;position:relative;top:50%;left:50%;transform: translateY(-50%) translateX(-50%);text-shadow:0 2px 3px #0003;display: none !important;}
+
+/* Account Menu */
+#account-menu {display:none;position: absolute;right: 15px; top: 40px;z-index: 99;}
+.menu-container {width: 200px;background-color: #fff;border-radius: 10px;overflow: hidden;box-shadow: 0 5px 20px #0002;padding: 10px 0;}
+    .menu-container ul {padding: 0;margin: 0;list-style-type: none}
+    .menu-container ul a li {text-align: center;padding: 10px;}
+    .menu-container ul a li:hover {background-color: #eee}
+
+
+/* Skin Package */
+/* ceria */
+.ceria1 {background-color: #fffdef;box-shadow: 0 2px 10px #0005}
+.ceria2 {background-color: #ffd858;box-shadow: inset 0 2px 10px #0005}
+/* coklat manis */
+.coklatmanis1 {background-color: #e6d7c9;box-shadow: 0 2px 10px #0005}
+.coklatmanis2 {background-color: #a96851;box-shadow: inset 0 2px 10px #0005}
+/* daun */
+.daun1 {background-color: #d6f8b8;box-shadow: 0 2px 10px #0005}
+.daun2 {background-color: #acdeaa;box-shadow: inset 0 2px 10px #0005}
+/* dheafault */
+.dheafault1 {background-color: #fff;box-shadow: 0 2px 10px #0005}
+.dheafault2 {background-color: #69c2bc;box-shadow: inset 0 2px 10px #0005}
+/* gunung berapi */
+.gunungberapi1 {background-color: #313131;box-shadow: 0 2px 10px #0005}
+.gunungberapi2 {background-color: #525252;box-shadow: inset 0 2px 10px #0005}
+/* laut malam */
+.lautmalam1 {background-color: #071e3d;box-shadow: 0 2px 10px #0005}
+.lautmalam2 {background-color: #1f4287;box-shadow: inset 0 2px 10px #0005}
+/* mawar hitam */
+.mawarhitam1 {background-color: #0f0766;box-shadow: 0 2px 10px #0005}
+.mawarhitam2 {background-color: #ab0e86;box-shadow: inset 0 2px 10px #0005}
+/* monokrome */
+.monokrome1 {background-color: #e7e3e3;box-shadow: 0 2px 10px #0005}
+.monokrome2 {background-color: #bfbcbc;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.permenkaret1 {background-color: #fdf6fa;box-shadow: 0 2px 10px #0005}
+.permenkaret2 {background-color: #ffaaa6;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.telurgosong1 {background-color: #303242;box-shadow: 0 2px 10px #0005}
+.telurgosong2 {background-color: #f2be8d;box-shadow: inset 0 2px 10px #0005}
+/* perment karet */
+.unguterong1 {background-color: #d5def5;box-shadow: 0 2px 10px #0005}
+.unguterong2 {background-color: #6643b5;box-shadow: inset 0 2px 10px #0005}
