@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="aset/css/base.css">
+<link rel="stylesheet" href="aset/css/laptop.css">
+<link rel="stylesheet" href="aset/css/mobile.css">
+<link rel="stylesheet" href="aset/css/animate.css">
 <link rel="stylesheet" href="aset/css/toggleBear.css">
 <link rel="stylesheet" href="aset/font/bearfont.css">
 <link rel="stylesheet" href="aset/css/viewBear.css">
@@ -10,6 +13,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script src="aset/js/dragtoscroll.js"></script>
+<script src="aset/js/wow.js"></script>
+<script>new WOW().init();</script>
 <?php include 'bearConnection.php'; ?>
 <?php include 'aset/php/session.php'?>
 <?php include 'aset/php/brain.php'?>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">

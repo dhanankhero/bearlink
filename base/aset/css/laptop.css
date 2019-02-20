@@ -1,0 +1,6 @@
+@media only screen and (max-width: 900px) {
+    .view {display: none}
+    .editor-container {width: 100%}
+    #salin {display: none}
+    .titleSection {font-size: 30px}
+}

@@ -1,0 +1,20 @@
+@media only screen and (max-width: 650px) {
+    .link-home {background-color: #0000;color: #000;font-size: 25px;font-weight: bold}
+    .boxData {display: none;padding: 0}
+    #nama-akun {text-overflow: ellipsis;overflow: hidden;width: 100px;white-space: nowrap;padding: 10px !important}
+    .addButtonLink {padding: 11px 10px 15px;overflow: hidden;white-space: nowrap;display: table}
+    .buttonActMaster {font-size: 16px;padding: 10px 20px;margin-right: 10px;vertical-align: middle}
+    .fa-chart-line {display: none !important}
+    .linkButton {display: none}
+    .listData {padding: 10px}
+    .addDataContainer, .deleteDataContainer {width: 95%;min-width: 95%;}
+    .editedTitlePopup h1 {font-size: 25px;margin: 5px 0 0}
+        .editedTitlePopup {text-overflow: ellipsis;overflow: hidden;}
+    .editTitle {padding: 10px 0 0 0}
+    .titleSection {font-size: 18px;margin-top: 15px}
+    .lookMode {top: 20px}
+    .standarSubmit {padding: 10px 20px;font-size: 18px;width: 49%}
+    .standarLogin {padding: 10px 20px;font-size: 18px;width: 49%}
+    #formEditLink {padding: 10px}
+    .standartForm {background-color: aliceblue}
+}

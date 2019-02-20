@@ -51,8 +51,8 @@
                 <h3>Login</h3>
                 <form action="checkRhino.php" method="post">
                     <input type="text" name="username" id="login-username1" class="form-design" placeholder="Email" autocomplete="email">
-                    <input type="password" name="password" id="login-password" class="form-design" placeholder="Password">
-                    <input type="submit" value="Masuk" class="submit-design">
+                    <input type="password" name="password" id="login-password1" class="form-design" placeholder="Password">
+                    <input type="submit" value="masuk" class="submit-design">
                 </form>
             </div>
             <div id="register-hide" class="register">
@@ -62,7 +62,7 @@
                     <input type="text" name="username" id="login-username" class="form-design" placeholder="Username">
                     <input type="email" name="email" id="login-email" class="form-design" placeholder="Email" autocomplete="email">
                     <input type="password" name="password" id="login-password" class="form-design" placeholder="password">
-                    <input type="submit" value="Daftar" class="submit-design">
+                    <input type="submit" value="daftar" name="daftar" class="submit-design">
                 </form>
             </div>
 

@@ -41,7 +41,7 @@ a {color: #000}
     .dragMe {padding: 0px 10px;height: 68px;background-color: #f4f4f4;color: #9c9c9c;display: table;cursor: move;border-right: 1px solid #eeeeee;}
       .dragMe i {display: table-cell;vertical-align: middle;font-size: 14px}
       .checkedstatus {background-color: #69c2bc;color: #fff}
-    .judulButton {font-size: 20px;line-height: 15px;    padding: 2.5px 2.5px 8px;}
+    .judulButton {font-size: 20px;line-height: 15px;padding: 6px 2.5px 8px;}
     .linkButton, .linkTool {font-size: 15px;line-height: 20px;padding: 2.5px}
     .linkButton {color: #959899;padding-left: 10px}
     .linkTool {position: absolute;right: 15px;top: 50%;transform: translateY(-50%);font-size: 20px;color: #ccc}
@@ -101,7 +101,7 @@ a {color: #000}
     .theme-item {max-width: 175px;min-width: 150px;min-height: 100px;float: left;margin: 10px}
     .theme-preview {width: 100%;padding: 1px 0;}
         .colorname1 {padding: 1px;border-radius: 60px;cursor: pointer;}
-        .colorname1:hover {box-shadow: 0 5px 15px #0007}
+        .colorname1:hover {box-shadow: 0 4px 15px #ccc;}
         .colorname2 {height: 40px;margin: 10px;border-radius: 50px;cursor: pointer;}
     .theme-item h2 {font-weight: normal;font-size: 14px;margin: 0;text-align: center;padding: 10px}
     .pilih-theme {width: 100%;padding: 20px;background-color: #69c2bc;color: #fff;border: 0;font-size: 20px;cursor: pointer;font-weight: bold;display: none;overflow: hidden;}
