@@ -1,4 +1,4 @@
-<ul id="sortable">
+<!-- <ul id="sortable"> -->
 
 <?php
 
@@ -10,7 +10,7 @@ $query = mysqli_query($koneksi,$sql);
 
 while ($data = mysqli_fetch_array($query)){
   echo "
-  <li class='ui-state-default pulse' id='item-".$data['sort']."'>
+  <!--<li class='ui-state-default pulse' id='item-".$data['sort']."'>-->
     <div class='buttonData'> 
       <div class='viewStats'>
         <div class='shadow-stats' id='stats_".$data['id']."'>
@@ -100,14 +100,14 @@ while ($data = mysqli_fetch_array($query)){
 
       </div>
     </div>
-    </li>
+    <!--</li>-->
   ";
  
 }
 
  ?>
 
- </ul>
+ <!-- </ul> -->
 
  <script>
   $( function() {

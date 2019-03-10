@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="aset/css/mobile.css">
 <link rel="stylesheet" href="aset/css/animate.css">
 <link rel="stylesheet" href="aset/css/toggleBear.css">
-<link rel="stylesheet" href="aset/font/bearfont.css">
 <link rel="stylesheet" href="aset/css/viewBear.css">
 <link rel="stylesheet" href="aset/css/scrollBar.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.css">

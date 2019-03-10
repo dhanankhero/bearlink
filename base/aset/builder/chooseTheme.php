@@ -1,4 +1,4 @@
-<form action="changeTheme" method="post">
+<form action="aset/php/editTheme.php" method="post">
     <section id="choose-theme" class="dragscroll">
         <div class="theme-container">
             <div class="theme-item" id="theme-1">
@@ -179,7 +179,8 @@
             <div class="clr"></div>
         </div>
     </section>
-    <input type="submit" value="Pilih" class="pilih-theme">
+    <input type="hidden" name="username" value="<?php echo $_SESSION['username'] ?>">
+    <input type="submit" value="Pilih" class="pilih-theme" onclick="saveTheme()" name="submit">
 </form>
     <script>
         //fungsi untuk tombol rubah tema
@@ -196,4 +197,8 @@
             $(this).data('dobelKlik', !dobelKlik);
 
         });
+
+        function saveTheme() {
+
+        }
     </script>

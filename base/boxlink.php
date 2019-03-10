@@ -2,43 +2,29 @@
 <html lang="id" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Boxliink - BearLink</title>
+    <title>Boxlink - Bearlink</title>
     <?php include 'aset/builder/headinclude.php' ?>
   </head>
   <body>
     <?php include 'aset/builder/navbar.php'; ?>
     <div class="editor-container">
       <?php include 'aset/builder/actbutton.php'; ?>
-      <div class="shadowContainerAddButton" id="shadowAddUrl">
-        <div class="shadownAddButton"></div>
-        <form id="addDataLink" action="index.html" method="post">
-        <div class="addDataContainer cnmd">
-          <div class="judulButtonPopUp">
-            <div class="editedTitlePopup fkiri">
-              <h1><i class='fas fa-times closePopUp'></i>&nbsp;&nbsp;Tambah URL</h1>
-            </div>
-            <div class="lookMode fkanan posMiddle">
-              <label class="switch">
-                <input type="checkbox" name="checkView">
-                <span class="slider round"></span>
-              </label>
-            </div>
-            <div class="clr"></div>
-          </div>
-          <div class="addDataFormContainer">
-              <input type="text" name="namaLink" value="" id="inputUrlName" class="urlCustom" placeholder="Link Name"><br/>
-              <input type="text" name="isiLink" value="" id="inputUrlData" class="urlCustom" placeholder="Link URL">
-              <input type="button" id="saveLink" name="saveLink" value="RAAAWWRR" class="submitURL">
-          </div>
-        </div>
-      </form>
-      </div>
-      <?php include 'aset/builder/chooseTheme.html' ?>
+
+      <!-- Pop Up Tambah URL Link -->
+      <?php include 'aset/builder/popupAddUrl.php'; ?>
+
+      <!-- Pop Up Tambah URL Whatsapp -->
+      <?php include 'aset/builder/popupWhatsappUrl.php'; ?>
+
+      <!-- Merubah Theme -->
+      <?php include 'aset/builder/chooseTheme.php' ?>
       <div class="listData">
 
           <?php include 'aset/php/tampilLink.php' ?>
 
       </div>
+      <div class="bearlink" style="text-align:center"><a href="http://bearlink.id/" target="_blank" rel="noopener noreferrer">&copy; Bearlink 2019</a></div>
+      <div class="spacing"></div>
     </div>
 
     <div class='view'>

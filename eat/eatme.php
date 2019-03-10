@@ -14,13 +14,15 @@
     $query2 = mysqli_query($koneksi,$sql2);
     
     ?>
-    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost/bearlink/base/aset/skin/<?php while ($getUserDataTheme = mysqli_fetch_array($query)) { echo $getUserDataTheme['theme']; } ?>.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/bearlink/base/aset/skin/<?php while ($getUserDataTheme = mysqli_fetch_array($query)) { echo $getUserDataTheme['theme']; } ?>.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/bearlink/base/aset/css/eatme.css" />
     <title><?php echo $getUsername ?> - Bearlink</title>
     <style type="text/css">
         .spacing {height: 35px;}
     </style>
 </head>
 <body>
+    <div class="spacing"></div>
     <div class="box-container">
         <div class="head">
             <div class="img-wrap">
@@ -51,6 +53,8 @@
 
         </div>
     </div>
+    <div class="spacing"></div>
+    <div class="bearlink" style="text-align:center"><a href="http://bearlink.id/" target="_blank" rel="noopener noreferrer">&copy; Bearlink 2019</a></div>
     <div class="spacing"></div>
     <div class="ads">
         

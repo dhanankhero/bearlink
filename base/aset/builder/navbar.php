@@ -11,7 +11,7 @@
   </ul>
   <ul class="fkanan">
     <li class="boxData">https://bearlink.id/u/<?php echo $username ?></li>
-    <a href="#"><li id="salin" class="copyData" data-clipboard-action="copy" data-clipboard-target=".boxData">Salin Link</li></a>
+    <a href="#"><li id="salin" class="copyData" data-clipboard-text="https://bearlink.id/u/<?php echo $username ?>">Salin Link</li></a>
     <a href="#" id="akun"><li class="copyData" id="nama-akun"><?php echo $name ?></li></a>
     <div class="clr"></div>
   </ul>
@@ -23,6 +23,7 @@
 
   copyToIn.on('success', function(e) {
     console.log(e);
+    alert('Link sudah Tersalin!');
   });
   copyToIn.on('error', function(e) {
     console.log(e);
