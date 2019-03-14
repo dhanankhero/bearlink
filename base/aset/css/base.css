@@ -36,9 +36,9 @@ a {color: #000}
 
   .listData {padding: 30px;}
     .buttonData {width: 100%;margin-bottom: 5px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
-    .buttonDataContainer {position: relative;}
+    .buttonDataContainer {position: relative;overflow: hidden;}
     .buttonList {padding: 5px 0 5px 10px;width: calc(100% - 28px);left: 30px}
-    .dragMe {padding: 0px 10px;height: 68px;background-color: #f4f4f4;color: #9c9c9c;display: table;cursor: move;border-right: 1px solid #eeeeee;}
+    .dragMe {padding: 0px 5px;height: 68px;background-color: #f4f4f4;color: #9c9c9c;display: table;cursor: move;border-right: 1px solid #eeeeee;}
       .dragMe i {display: table-cell;vertical-align: middle;font-size: 14px}
       .checkedstatus {background-color: #69c2bc;color: #fff}
     .judulButton {font-size: 20px;line-height: 15px;padding: 6px 2.5px 8px;}

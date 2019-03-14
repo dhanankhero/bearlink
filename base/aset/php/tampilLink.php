@@ -25,7 +25,7 @@ while ($data = mysqli_fetch_array($query)){
       </div>
       <div class='buttonDataContainer'>
         <div class='dragMe fkiri ".$data['view-link']."status'>
-          <i class='fas fa-ellipsis-v'></i>
+          <!--<i class='fas fa-ellipsis-v'></i>-->
         </div>
         <div class='buttonList fkiri mdle'>
           <div class='judulButton'>".$data['name-link']."</div>
@@ -109,7 +109,7 @@ while ($data = mysqli_fetch_array($query)){
 
  <!-- </ul> -->
 
- <script>
+ <!--<script>
   $( function() {
     $( "#sortable" ).sortable({ axis: "y",
                                 cursor: "move",
@@ -127,4 +127,4 @@ while ($data = mysqli_fetch_array($query)){
                               });
     $( "#sortable" ).disableSelection({ axis: "y" });
   } );
- </script>
+ </script>-->
