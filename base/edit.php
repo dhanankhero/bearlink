@@ -18,9 +18,9 @@
 
       <!-- Merubah Theme -->
       <?php include 'aset/builder/chooseTheme.php' ?>
-      <div class="listData">
+      <div class="listDatalistDataNoGap">
 
-          <?php include 'aset/php/tampilLink.php' ?>
+          <?php include 'aset/builder/editformlink.php' ?>
 
       </div>
       <?php include 'aset/builder/footer.php' ?>

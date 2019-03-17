@@ -8,6 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="base/aset/css/base.css">
+    <link rel="stylesheet" href="base/aset/css/laptop.css">
+    <link rel="stylesheet" href="base/aset/css/mobile.css">
+    <link rel="stylesheet" href="base/aset/css/animate.css">
+    <link rel="stylesheet" href="base/aset/css/toggleBear.css">
+    <link rel="stylesheet" href="base/aset/css/viewBear.css">
+    <link rel="stylesheet" href="base/aset/css/scrollBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <script src="base/aset/js/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="base/aset/js/dragtoscroll.js"></script>
+    <script src="base/aset/js/wow.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 

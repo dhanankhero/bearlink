@@ -12,10 +12,12 @@ a {color: #000}
 .kri {position: absolute;left: 0;}
 .knn {position: absolute;right: 0;}
 .space {height: 200px}
+.spacing {height: 20px}
 .spaceDelete {padding: 25px;border-bottom: 1px solid #ccc;font-size: 20px; color: #bbb}
   .spaceDelete p {padding: 0;margin: 10px 0 0;font-size: 14px}
   .rekomendAct {background-color: #69c2bc;color: #fff !important}
     .rekomendAct:hover {background-color: #35908a !important;}
+    .topline {border-top: 1px solid #eee}
 /* .spacer-button {height: 97px} */
 
 .navbar-container {background-color: #fff;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44);position: fixed;top: 0;width: 100%;z-index: 99;}
@@ -29,12 +31,13 @@ a {color: #000}
 
 
 .editor-container {height: calc(100% - 35px);margin-top: 35px;position: absolute;width: 70%;overflow: auto;box-shadow: 0 0 20px rgba(144, 144, 144, 0.44)}
-.addButton {}
+.addButton {position: sticky;top: 0;background-color: #fff;z-index: 9;}
   .addButtonLink {padding: 30px;width: 100%;font-size: 25px;background-color: #fff;box-shadow: 0 2px 5px #ddd}
   .buttonActMaster {background-color: #fff;padding: 14px 25px;border-radius: 50px;color: #555;box-shadow: 0 2px 10px #ccc;margin-right: 10px}
     .buttonActMaster:hover {box-shadow: 0 4px 15px #ccc;}
 
   .listData {padding: 30px;}
+  .listDataNoGap {padding: 0 !important;}
     .buttonData {width: 100%;margin-bottom: 5px;text-align: left;border-radius: 5px;background-color: #fff;box-shadow: 0 2px 10px #ccc;overflow: hidden;}
     .buttonDataContainer {position: relative;overflow: hidden;}
     .buttonList {padding: 5px 0 5px 10px;width: calc(100% - 28px);left: 30px}
@@ -152,3 +155,35 @@ a {color: #000}
 /* perment karet */
 .unguterong1 {background-color: #d5def5;box-shadow: 0 2px 10px #0005}
 .unguterong2 {background-color: #6643b5;box-shadow: inset 0 2px 10px #0005}
+
+/* Edit Link */
+#edit-container {position: relative !important;margin: 0 auto;}
+#list-button {width: 225px;float: left;overflow: auto;position: sticky;top: 0;}
+    .list-button-data-container {}
+        .list-button-data-container ul {list-style-type: none;margin: 0;padding: 0}
+        .list-button-data-container ul li {padding: 15px 20px;font-size: 15px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;color: #888;position: relative;}
+        .selected {color: #69c2bc !important}
+        .selected::before {content: "";border: 0.5px solid #69c2bc;position: absolute;height: 100%;left: 0;top: 50%;transform: translateY(-50%);border-radius: 10px;width: 3px;background-color: #69c2bc}
+        .list-button-data-container ul li a {color: inherit;text-decoration: none}
+        .nav-kembali {background-color: #69c2bc;color: #fff !important}
+        .nav-kembali:hover {background-color: #35908a}
+        
+
+#edit-panel {width: calc(100% - 225px);background-color: #fff;float: left;position: sticky;top: 0;border-top: 1px solid #eee;border-left: 1px solid #eee}
+    .title {padding: 20px}
+    .title h2, .title h4 {margin: 10px 0;color: #888;text-align: center}
+    .title h2 {font-size: 30px;}
+    .title h4 {font-size: 20px;margin: 5px;font-weight: normal;}
+    .form-edit {padding: 20px}
+    #layout {width: 100%;border-spacing: 0;}
+    #layout .label {width: 20%;padding: 10px 0;color: #999}
+    #layout .value {width: 80%;padding: 10px 0}
+    #layout .action {text-align: center}
+
+    .bl-input {width: 100%;padding: 10px 12px 12px;font-size: 20px;border: 0;background-color: #eee;border-radius: 5px}
+    .bl-input:focus {outline: none;background-color: #e3e3e3}
+    .bl-submit {width: 30%;padding: 14px;font-size: 16px;border: 0;background-color: #eee;border-radius: 5px;margin: 20px;box-shadow: 0 5px 10px #ddd;cursor: pointer;}
+    .bl-input:hover {background-color: #e8e8e8}
+    .bl-submit:focus {outline: none;background-color: #e3e3e3}
+    .bl-save {background-color: #69c2bc;color: #fff}
+    .bl-save:focus {background-color: #35908a}

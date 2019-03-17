@@ -5,13 +5,13 @@
 include 'bearConnection.php';
 require_once 'session.php';
 
-$sql = "SELECT * FROM `sysdb-$username` ORDER BY `sysdb-$username`.`sort` ASC";
+$sql = "SELECT * FROM `sysdb-$username` ORDER BY `sysdb-$username`.`id` DESC";
 $query = mysqli_query($koneksi,$sql);
 
 while ($data = mysqli_fetch_array($query)){
   echo "
   <!--<li class='ui-state-default pulse' id='item-".$data['sort']."'>-->
-    <div class='buttonData'> 
+    <div class='buttonData' title='".$data['url-link']."'> 
       <div class='viewStats'>
         <div class='shadow-stats' id='stats_".$data['id']."'>
           <div class='contentStatsContainer'>
@@ -33,7 +33,7 @@ while ($data = mysqli_fetch_array($query)){
         </div>
         <div class='linkTool'>
           <i class='fas fa-chart-line' id='statsButton_".$data['id']."' title='Total Kunjungan Link'></i>
-          <a href='editlink.php?id=".$data['id']."'><i class='fas fa-cog' id='boxLink_".$data['id']."' title='Edit Link'></i></a>
+          <a href='edit.php?id=".$data['id']."'><i class='fas fa-cog' id='boxLink_".$data['id']."' title='Edit Link'></i></a>
           <i class='far fa-trash-alt' id='delete_".$data['id']."' style='color:red' title='Hapus Link'></i>
         </div>
         <div class='clr'></div>

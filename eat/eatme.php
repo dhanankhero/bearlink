@@ -9,7 +9,7 @@
     include '../base/aset/php/bearConnection.php';
     $getUsername = $_GET['user'];
     $sql = "SELECT * FROM `sysdb_member` WHERE username = '".$getUsername."'";
-    $sql2 = "SELECT * FROM `sysdb-$getUsername` WHERE `view-link`='checked' ORDER BY `sysdb-$getUsername`.`sort` ASC";
+    $sql2 = "SELECT * FROM `sysdb-$getUsername` WHERE `view-link`='checked' ORDER BY `sysdb-$getUsername`.`id` DESC";
     $query = mysqli_query($koneksi, $sql);
     $query2 = mysqli_query($koneksi,$sql2);
     
@@ -43,7 +43,7 @@
                 while($getUserDataLink = mysqli_fetch_array($query2)) {
                     echo "
                     <a href='".$getUserDataLink['url-link']."' target='_blank' rel='noopener noreferrer nofollow'>
-                        <li>".$getUserDataLink['name-link']."</li>
+                        <li title='".$getUserDataLink['deskripsi-link']."'>".$getUserDataLink['name-link']."</li>
                     </a>
                     ";
                 }
