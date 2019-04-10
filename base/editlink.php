@@ -1,3 +1,4 @@
+<?php include 'aset/php/session.php'?>
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
   <head>
@@ -167,7 +168,7 @@
         });
       };
 
-      
+
 
       // Edit Link Data
       // function editLinkData(id) {

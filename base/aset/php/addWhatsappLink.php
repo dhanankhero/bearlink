@@ -2,8 +2,9 @@
   include 'bearConnection.php';
   include 'session.php';
 
+  $whatsappLink = "https://api.whatsapp.com/send?phone=";
   $namaLink = $_POST['namaLink'];
-  $isiLink = $_POST['isiLink'];
+  $isiLink = $whatsappLink . $_POST['isiLink'] . "&text=";
   $checkView = $_POST['checkView'];
   if ($checkView == 'on') {
     $dataCheck = 'checked';

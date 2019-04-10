@@ -1,3 +1,4 @@
+<?php include 'aset/php/session.php'?>
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
 	<head>
@@ -6,7 +7,7 @@
 		<?php include "aset/builder/headinclude.php" ?>
 	</head>
 	<body>
-		
+
 		<?php
 
 		$userip = getClientIp();
@@ -23,6 +24,6 @@
         }
 
 		?>
-		
+
 	</body>
 </html>

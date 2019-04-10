@@ -64,7 +64,7 @@
           <?php
             echo "
               <td class='label'><label for='urlLink'>Url Link</label></td>
-              <td class='value'><input type='url' class='bl-input' name='editIsiLink' id='urlLink' value='".$data['url-link']."'></td>
+              <td class='value'><input type='url' class='bl-input' name='editIsiLink' id='urlLink' value='".$data['url-link']."' title='URL harus di lengkapi http:// atau https://'></td>
             "
           ?>
         </tr>
@@ -99,6 +99,7 @@ $(document).ready(function() {
       data: $('#formEditLink').serialize(),
       success: function(d) {
         $('.link-container').load("aset/php/tampilLinkViewMode.php");
+        alert('Berhasil di Simpan');
       }
     });
   });

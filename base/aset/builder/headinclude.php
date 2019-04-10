@@ -16,7 +16,6 @@
 <script src="aset/js/wow.js"></script>
 <script>new WOW().init();</script>
 <?php include 'bearConnection.php'; ?>
-<?php include 'aset/php/session.php'?>
 <?php include 'aset/php/brain.php'?>
 <!DOCTYPE html>
 <meta charset="UTF-8">

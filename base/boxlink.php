@@ -1,3 +1,4 @@
+<?php include 'aset/php/session.php'?>
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
   <head>
@@ -32,7 +33,7 @@
 
       echo "<div class='header'>
       <div class='foto'>
-      <img src='http://dhunsdevice/avatar/7.JPG' alt=''>
+      <img src='http://localhost/avatar/7.JPG' alt=''>
       </div>
       <div class='nama'>";
       echo "@" . $username;
@@ -52,34 +53,7 @@
       var inputUrlName = document.getElementById('inputUrlName');
       var inputUrlData = document.getElementById('inputUrlData');
 
-      //add Data
-      $('#addUrlData').click(function(a) {
-        a.preventDefault();
-        $('.shadowContainerAddButton').fadeIn('fast');
-        inputUrlName.value = '';
-        inputUrlData.value = '';
-      });
-      $('.closePopUp').click(function(a) {
-        $('.addDataContainer');
-        a.preventDefault();
-        $('.shadowContainerAddButton').fadeOut('fast');
-      });
 
-      //add Data Live
-      $(document).ready(function() {
-        $('#saveLink').click(function() {
-          $.ajax({
-            url: 'aset/php/addDataLink.php',
-            type: 'post',
-            data: $('#addDataLink').serialize(),
-            success: function(d) {
-              $('.shadowContainerAddButton').fadeOut('fast');
-              $('.link-container').load("aset/php/tampilLinkViewMode.php");
-              $('.listData').load("aset/php/tampilLink.php");
-            }
-          });
-        });
-      });
 
       // Delete Link Data
       function deleteLink(id) {
@@ -99,6 +73,6 @@
         $( "#sortable" ).disableSelection({ axis: "y" });
       } );
     </script>
-    
+
   </body>
 </html>

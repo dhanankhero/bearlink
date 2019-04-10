@@ -106,25 +106,3 @@ while ($data = mysqli_fetch_array($query)){
 }
 
  ?>
-
- <!-- </ul> -->
-
- <!--<script>
-  $( function() {
-    $( "#sortable" ).sortable({ axis: "y",
-                                cursor: "move",
-                                containment: "parent",
-                                // update: function (even,ui) {
-                                //   var data = $(this).shortable('serialize');
-
-                                //   //Update Database
-                                //   $.ajax({
-                                //     data: data,
-                                //     type: 'POST',
-                                //     url:  
-                                //   });
-                                // }
-                              });
-    $( "#sortable" ).disableSelection({ axis: "y" });
-  } );
- </script>-->
